@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full custom furniture, carpentry, and millwork portfolio for Ruslan Lypovskyi."
+    />
+    <title>Portfolio | Ruslan Lypovskyi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="portfolio-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Back to resume">
+        <span>RL</span>
+      </a>
+      <nav class="nav-links" aria-label="Portfolio navigation">
+        <a href="index.html">Resume</a>
+        <a href="#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery-hero">
+        <p class="eyebrow">Full portfolio</p>
+        <h1>Custom furniture, millwork, assembly, and installation work.</h1>
+        <p>
+          A broader visual archive of completed and in-progress work. The CV
+          keeps only the strongest highlights; this page gives employers and
+          clients more proof of range and consistency.
+        </p>
+      </section>
+
+      <section id="gallery" class="gallery-section" aria-label="Photo gallery">
+        <div class="gallery-toolbar">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2>160 project photos</h2>
+          </div>
+
+          <div class="filter-controls" aria-label="Filter photos">
+            <button class="filter-button active" type="button" data-filter="all">
+              All
+            </button>
+            <button class="filter-button" type="button" data-filter="production">
+              Production
+            </button>
+            <button class="filter-button" type="button" data-filter="assembly">
+              Assembly
+            </button>
+            <button class="filter-button" type="button" data-filter="other">
+              Other
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery-count" aria-live="polite"></div>
+        <div class="photo-grid" data-gallery></div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" aria-label="Photo preview">
+      <button class="lightbox-close" type="button" aria-label="Close preview">
+        Close
+      </button>
+      <button class="lightbox-nav previous" type="button" aria-label="Previous photo">
+        Previous
+      </button>
+      <figure>
+        <img alt="" />
+        <figcaption></figcaption>
+      </figure>
+      <button class="lightbox-nav next" type="button" aria-label="Next photo">
+        Next
+      </button>
+    </dialog>
+
+    <script src="js/portfolio-data.js"></script>
+    <script src="js/portfolio.js"></script>
+  </body>
+</html>
